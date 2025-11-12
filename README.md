@@ -1,4 +1,4 @@
-# 🎮 Free-to-Play Game Hub
+# 🎮 Game Hub
 
 A modern, responsive web application for discovering and exploring free-to-play games across various platforms and genres. Built with vanilla JavaScript, Bootstrap, and the Free-to-Play Games Database API.
 
