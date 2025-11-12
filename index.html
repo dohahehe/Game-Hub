@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Hub</title>
+    <link rel="shortcut icon" href="./Assets/favicon.png" type="image/x-icon">
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="./Styles/bootstrap.min.css">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="./Styles/all.min.css">
+    <!--MEDIA QUERIES-->
+    <link rel="stylesheet" href="./Styles/media.css">
+    <!--MAIN STYLE-->
+    <link rel="stylesheet" href="./Styles/main.css">
+</head>
+<body>
+
+    <!--NAVBAR-->
+    <header class="container">
+        <div class="nav-container row flex-row">
+                <a href="#" class="logo">
+                    <i class="fa-solid fa-gamepad"></i>
+                    Game
+                </a>
+                <div class="switch-container">
+                    <label class="switch">
+                    <input id="theme-toggle" type="checkbox" checked="darkTheme" />
+                    <div class="slider round">
+                        <div class="sun-moon">
+                        <svg id="moon-dot-1" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="moon-dot-2" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="moon-dot-3" class="moon-dot" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-1" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-2" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="light-ray-3" class="light-ray" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+
+                        <svg id="cloud-1" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-2" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-3" class="cloud-dark" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-4" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-5" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        <svg id="cloud-6" class="cloud-light" viewBox="0 0 100 100">
+                            <circle cx="50" cy="50" r="50"></circle>
+                        </svg>
+                        </div>
+                        <div class="stars">
+                        <svg id="star-1" class="star" viewBox="0 0 20 20">
+                            <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-2" class="star" viewBox="0 0 20 20">
+                            <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-3" class="star" viewBox="0 0 20 20">
+                            <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        <svg id="star-4" class="star" viewBox="0 0 20 20">
+                            <path
+                            d="M 0 10 C 10 10,10 10 ,0 10 C 10 10 , 10 10 , 10 20 C 10 10 , 10 10 , 20 10 C 10 10 , 10 10 , 10 0 C 10 10,10 10 ,0 10 Z"
+                            ></path>
+                        </svg>
+                        </div>
+                    </div>
+                    </label>
+
+                </div>
+        </div>
+    </header>
+
+     <!--LOADIER-->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+        <p>Loading games...</p>
+    </div>
+
+    <!--HOME SECTION-->
+    <section class="home swiper container-fluid" id="home">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner" id="featured-carousel">
+                
+            </div>
+        </div>
+        
+    </section>
+
+    <!--MAIN CONTENT-->
+    <main class="container pt-3">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="main-title">Latest Games</h1>
+                <p class="subtitle">Discover the hottest games and our expert opinions</p>
+            </div>
+        </div>
+
+        <!-- FILTERS -->
+        <div class="f-s row mt-4 justify-content-between">
+                <div class="filters col-sm-8">
+                    <button class="filter-btn active" data-filter="all">All Games</button>
+                    <button class="filter-btn" data-filter="shooter">Shooter</button>
+                    <button class="filter-btn" data-filter="mmorpg">MMORPG</button>
+                    <button class="filter-btn" data-filter="sailing">Sailing</button>
+                    <button class="filter-btn" data-filter="permadeath">Permadeath</button>
+                    <button class="filter-btn" data-filter="superhero">Super Hero</button>
+                    <button class="filter-btn" data-filter="pixel">Pixel</button>
+                </div>
+                <div class="search col-sm-4">
+                    <label for="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </label>
+                    <input class="search" type="text" name="search" id="search" placeholder="search your favorite game..">
+                </div>
+        </div>
+
+        <div class="row mt-4" id="games-grid">
+
+        </div>
+            <!-- LOAD MORE BUTTON -->
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <button id="load-more" class="btn-load-more">Load More Games</button>
+                </div>
+            </div>
+    </main>
+
+    <!-- GAME MODAL -->
+    <div class="modal fade" id="gameModal" tabindex="-1" aria-labelledby="gameModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="gameModalLabel">Game Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="gameModalBody">
+                    <!-- Game details will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--BOOTSTRAP-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--THEMES SCRIPT-->
+    <script src="./js/themes.js"></script>
+    <!--MAIN SCRIPT-->
+    <script src="./js/main.js?v=5.0"></script>
+</body>
+</html>
