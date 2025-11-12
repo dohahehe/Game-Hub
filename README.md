@@ -2,11 +2,18 @@
 
 A modern, responsive web application for discovering and exploring free-to-play games across various platforms and genres. Built with vanilla JavaScript, Bootstrap, and the Free-to-Play Games Database API.
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?logo=javascript&logoColor=black)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?logo=bootstrap&logoColor=white)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
-![FontAwesome](https://img.shields.io/badge/FontAwesome-6.0-528DD7?logo=fontawesome&logoColor=white)
+## 🛠️ Technology Stack
+
+<div align="center">
+
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![FontAwesome](https://img.shields.io/badge/FontAwesome-6.0-528DD7?style=for-the-badge&logo=fontawesome&logoColor=white)
+![RapidAPI](https://img.shields.io/badge/RapidAPI-Platform-00C7B7?style=for-the-badge&logo=rapidapi&logoColor=white)
+
+</div>
 
 ## ✨ Features
 
@@ -42,6 +49,4 @@ A modern, responsive web application for discovering and exploring free-to-play 
   <img src="./Assets/Screenshots/details sc(iPad Pro).png" width="50%" alt="Dashboard">
 </div>
 *Detailed game information in responsive modal*
-
-## 🛠️ Technology Stack
 
