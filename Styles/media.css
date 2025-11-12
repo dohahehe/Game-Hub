@@ -1,0 +1,54 @@
+@media screen and (max-width: 992px) {
+    .f-s{
+        justify-content: center !important;
+    }
+    .filters{
+        width: 100% !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .search{
+        width: 100% !important;
+    }
+    .m-img-container{
+        margin-top: 2.2rem !important;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .modal-content .platform-badge {
+        top: 87% !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .game-content {
+        margin-top: 0 !important;
+    }
+    .game-content h3 {
+        font-weight: 500 !important;
+        font-size: 1.3rem !important;
+        color: var(--text-color);
+        text-wrap: balance !important;
+        align-content: center !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 1rem !important;
+    }
+    .game-content p {
+        max-height: 4.5rem;
+        font-size: .9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .filter-btn {
+        padding: 0.5rem 1rem;
+        font-size: .8rem;
+        width: fit-content;
+        text-wrap: nowrap;
+    }
+}
